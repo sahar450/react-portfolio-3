@@ -1,0 +1,102 @@
+.minbox-header{
+    position: sticky;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.50);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    z-index: 50000;
+}
+.kname{
+    color: white;
+}
+.title-name{
+    color:blue;
+}
+ul li{
+    list-style-type: none;
+    padding: 0px 10px 15px 10px ;
+}
+.show-menu{
+    display: flex;
+    position: relative;
+    color: white;
+}
+.btn-headerr{
+    color: white;
+    padding: 5px;;
+    background-color: blue;
+    transform: skewX(-8deg);
+    border: none;
+    transition: all 0.80s ease ;
+}
+.btn-headerr:hover{
+    border-radius: 15px;
+}
+.submenu-h{
+   position: absolute; 
+   background-color: white;
+   
+   padding: 10px 0px 10px 0px;
+    width: 40%;
+    top: 100%;
+}
+.submenu-h li{
+    color: black;
+    
+}
+.icon-btn{
+    background-color: transparent;
+    color: white;
+    border: none;
+    display: none;
+}
+.hide-menu{
+    background-color: rgba(255, 255, 255, 0.95); /* پس‌زمینه شفاف‌تر */
+    position: fixed; /* ثابت کردن موقعیت */
+    width: 70%; /* عرض بیشتر برای بهتر دیده شدن */
+    max-width: 300px; /* جلوگیری از بیش از حد بزرگ شدن */
+    left: -100%;
+    padding: 20px 0;
+    height: 100vh;
+    transition: left 0.4s ease-in-out;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.2); /* سایه کناری */
+    z-index: 999;
+    overflow-y: auto;
+    
+}
+.show{
+    left: 0;
+}
+
+.submenu-hiden {
+    background-color: #f8f9fa; /* رنگ پس‌زمینه روشن */
+    border-radius: 8px; /* گرد کردن گوشه‌ها */
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* اضافه کردن سایه */
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 10;
+}
+
+.submenu-hiden li {
+    padding: 8px 12px;
+    color: #333;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+.submenu-hiden li:hover {
+    background-color: rgba(0, 0, 255, 0.1); /* تغییر رنگ هنگام هاور */
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+    .show-menu, .btn-headerr {
+      display: none;
+    }
+    .icon-btn {
+      display: block;
+    }
+  }

@@ -1,0 +1,56 @@
+.Container{
+    margin: 300px 0px 0px 0px;
+}
+.right{
+    display: flex;
+    justify-items: center;
+}
+img{
+    padding: 15px;
+    filter: grayscale(100%);
+}
+
+.right-sub{
+    display: flex;
+    flex-direction: column;
+}
+h6{
+    color:rgb(116, 99, 249);
+}
+h1{
+   font-weight: bold;
+   color: white;
+}
+p{
+    color: rgb(105, 107, 108);
+}
+i{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+h5{
+    color: white;
+}
+.icon-left {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+   
+    color: white;
+    padding: 15px;
+   
+    width: fit-content; 
+  }
+  
+  .icon-left i {
+    background: #0056b3;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .left_sub {
+    flex: 1; /* متن را به بقیه فضا گسترش می‌دهد */
+  }
+  
