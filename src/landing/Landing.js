@@ -8,8 +8,16 @@ export default class Landing extends Component {
         super(props);
         this.state = {
             slider: [
-                { txttitle: "Nothing But The Best IT Experience", txtpra: "The partner of choice for many of the world's leading enterprises and technology challenges. We are a leader in business and technology", srcc: "/images/max-bohme-BNnwFmplLLM-unsplash.jpg "},
-                { txttitle: "Technology, Bridging Dreams and Reality", txtpra: "The partner of choice for many of the world's leading enterprises and technology challenges. We are a leader in business and technology", srcc: "/images/photo-1726137569914-ae2ad1c634f6.jpeg" },
+                { 
+                    txttitle: "Nothing But The Best IT Experience", 
+                    txtpra: "The partner of choice for many of the world's leading enterprises and technology challenges. We are a leader in business and technology", 
+                    srcc: process.env.PUBLIC_URL + "/images/photo-1726137569914-ae2ad1c634f6.jpeg"
+                },
+                { 
+                    txttitle: "Technology, Bridging Dreams and Reality", 
+                    txtpra: "The partner of choice for many of the world's leading enterprises and technology challenges. We are a leader in business and technology", 
+                    srcc: process.env.PUBLIC_URL + "/images/max-bohme-BNnwFmplLLM-unsplash.jpg" 
+                },
             ],
             count: 0
         };
